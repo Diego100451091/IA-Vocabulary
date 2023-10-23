@@ -1,7 +1,8 @@
 import sys
 import random
-from constants import COLORS, DICTIONARY
+from constants import DICTIONARY
 from utils import clear_terminal, get_exit, strip_accents
+from terminalPrints import print_title, print_colored_text
 
 def guess_mode():
     remaining_words = DICTIONARY.copy()
@@ -14,8 +15,7 @@ def guess_mode():
 
     while True:
         clear_terminal();
-        print(
-            f"{COLORS['purple']}==========| MODO ADIVINANZA |=========={COLORS['reset']}");
+        print_title ("MODO ADIVINANZA")
 
         print_progress(status_vector, status_index, total_dictionary_lenght);
 
@@ -39,11 +39,11 @@ def guess_mode():
             sys.stdout.flush()
 
         if (guessedWord == word_concept):
-            print(f"{COLORS['green']}¡Correcto!{COLORS['reset']}");
+            print_colored_text("¡Correcto!", "green")
             status_vector[status_index] = "correct";
         else:
-            print(
-                f"{COLORS['red']}Incorrecto{COLORS['reset']} - La palabra era: ", word["concept"]);
+            print_colored_text("Incorrecto", "red", "");
+            print (" - La palabra era: ", word["concept"])
             status_vector[status_index] = "incorrect";
             wrong_words.append(word);
 
@@ -52,6 +52,10 @@ def guess_mode():
         if get_exit():
             break;
 
+    show_wrong_words(wrong_words);
+
+
+def show_wrong_words (wrong_words):
     print("\nPalabras falladas:")
     for word in wrong_words:
         print("\nCONCEPTO: ", word["concept"]);
@@ -59,16 +63,15 @@ def guess_mode():
 
     get_exit();
 
-
 def print_progress(status_vector, status_index, total_lenght):
     print("Progreso: ", end="");
     for status in status_vector:
         if status == "clear":
             print("■", end="");
         elif status == "correct":
-            print(f"{COLORS['green']}■{COLORS['reset']}", end="");
+            print_colored_text("■", "green", end="")
         elif status == "incorrect":
-            print(f"{COLORS['red']}■{COLORS['reset']}", end="");
+            print_colored_text("■", "red", end="")
     print(f" {status_index}/{total_lenght}\n");
 
 def get_schema(word):

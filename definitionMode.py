@@ -1,14 +1,14 @@
 import random
 from constants import COLORS, DICTIONARY
 from utils import clear_terminal, get_exit
+from terminalPrints import print_title, print_colored_text
 
 def definition_mode():
     remaining_words = DICTIONARY.copy()
     while True:
         clear_terminal()
-        print(
-            f"{COLORS['purple']}==========| MODO DEFINICIÓN |=========={COLORS['reset']}");
-
+        print_title("MODO DEFINICIÓN")
+        
         if (len(remaining_words) == 0):
             print("Ya se han mostrado todas las palabras");
             break;
