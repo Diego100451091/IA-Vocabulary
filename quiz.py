@@ -4,9 +4,11 @@ import getpass
 import sys
 import unicodedata
 
+
 def strip_accents(s):
    return ''.join(c for c in unicodedata.normalize('NFD', s)
                   if unicodedata.category(c) != 'Mn')
+
 
 DICTIONARY = [
     {
@@ -462,12 +464,13 @@ COLORS = {
     "reset": "\033[0;0m"
 }
 
+
 def main():
-    
 
     while True:
         clear_terminal()
-        print(f"{COLORS['purple']}==========| MODO DE JUEGO |=========={COLORS['reset']}")
+        print(
+            f"{COLORS['purple']}==========| MODO DE JUEGO |=========={COLORS['reset']}")
         print("Seleccione el modo de juego: ")
         print("1. Definición")
         print("2. Adivinanza")
@@ -485,48 +488,45 @@ def main():
 
 
 def definition_mode(dictionary):
-    used_words = DICTIONARY.copy()
+    remaining_words = dictionary.copy()
     while True:
         clear_terminal()
-        print(f"{COLORS['purple']}==========| MODO DEFINICIÓN |=========={COLORS['reset']}");
-        
-        if (len(used_words) == 0):
+        print(
+            f"{COLORS['purple']}==========| MODO DEFINICIÓN |=========={COLORS['reset']}");
+
+        if (len(remaining_words) == 0):
             print("Ya se han mostrado todas las palabras");
             break;
-        
-        word = used_words.pop(random.randrange(len(used_words)));
+
+        word = remaining_words.pop(random.randrange(len(remaining_words)));
         print("CONCEPTO:    ", word["concept"]);
         print("DEFINICION:  ", word["definition"]);
 
         if get_exit():
             break;
 
+
 def guess_mode(dictionary):
-    used_words = DICTIONARY.copy()
+    remaining_words = dictionary.copy()
+    total_dictionary_lenght = len(dictionary);
     status_vector = []
     wrong_words = []
-    for i in range(len(dictionary)):
+    for i in range(total_dictionary_lenght):
         status_vector.append("clear")
     status_index = 0
 
     while True:
         clear_terminal();
-        print(f"{COLORS['purple']}==========| MODO ADIVINANZA |=========={COLORS['reset']}");
+        print(
+            f"{COLORS['purple']}==========| MODO ADIVINANZA |=========={COLORS['reset']}");
 
-        for status in status_vector:
-            if status == "clear":
-                print("█", end=" ");
-            elif status == "correct":
-                print(f"{COLORS['green']}█{COLORS['reset']}", end=" ");
-            elif status == "incorrect":
-                print(f"{COLORS['red']}█{COLORS['reset']}", end=" ");
-        print("\n");
-        
-        if (len(used_words) == 0):
+        print_progress(status_vector, status_index, total_dictionary_lenght);
+
+        if (len(remaining_words) == 0):
             print("Ya se han mostrado todas las palabras");
             break;
-        
-        word = used_words.pop(random.randrange(len(used_words)));
+
+        word = remaining_words.pop(random.randrange(len(remaining_words)));
         print("DEFINICION:  ", word["definition"]);
         print("CONCEPTO:     ");
         word_concept = strip_accents(word['concept']).lower();
@@ -545,22 +545,34 @@ def guess_mode(dictionary):
             print(f"{COLORS['green']}¡Correcto!{COLORS['reset']}");
             status_vector[status_index] = "correct";
         else:
-            print(f"{COLORS['red']}Incorrecto{COLORS['reset']} - La palabra era: ", word["concept"]);
+            print(
+                f"{COLORS['red']}Incorrecto{COLORS['reset']} - La palabra era: ", word["concept"]);
             status_vector[status_index] = "incorrect";
             wrong_words.append(word);
-        
+
         status_index += 1;
-        
+
         if get_exit():
             break;
 
-    print ("\nPalabras falladas:")
+    print("\nPalabras falladas:")
     for word in wrong_words:
         print("\nCONCEPTO: ", word["concept"]);
         print("DEFINICIÓN: ", word["definition"]);
 
     get_exit();
 
+
+def print_progress(status_vector, status_index, total_lenght):
+    print("Progreso: ", end="");
+    for status in status_vector:
+        if status == "clear":
+            print("■", end="");
+        elif status == "correct":
+            print(f"{COLORS['green']}■{COLORS['reset']}", end="");
+        elif status == "incorrect":
+            print(f"{COLORS['red']}■{COLORS['reset']}", end="");
+    print(f" {status_index}/{total_lenght}\n");
 
 def get_schema(word):
     schema = "";
