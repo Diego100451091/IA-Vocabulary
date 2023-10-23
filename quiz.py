@@ -1,6 +1,12 @@
 import random
 import os
 import getpass
+import sys
+import unicodedata
+
+def strip_accents(s):
+   return ''.join(c for c in unicodedata.normalize('NFD', s)
+                  if unicodedata.category(c) != 'Mn')
 
 DICTIONARY = [
     {
@@ -479,20 +485,16 @@ def main():
 
 
 def definition_mode(dictionary):
-    used_words = []
+    used_words = DICTIONARY.copy()
     while True:
-        clear_terminal();
+        clear_terminal()
         print(f"{COLORS['purple']}==========| MODO DEFINICIÓN |=========={COLORS['reset']}");
         
-        if (len(used_words) == len(dictionary)):
+        if (len(used_words) == 0):
             print("Ya se han mostrado todas las palabras");
             break;
         
-        word = random.choice(dictionary);
-        while word in used_words:
-            word = random.choice(dictionary);
-        used_words.append(word);
-
+        word = used_words.pop(random.randrange(len(used_words)));
         print("CONCEPTO:    ", word["concept"]);
         print("DEFINICION:  ", word["definition"]);
 
@@ -500,7 +502,7 @@ def definition_mode(dictionary):
             break;
 
 def guess_mode(dictionary):
-    used_words = []
+    used_words = DICTIONARY.copy()
     status_vector = []
     wrong_words = []
     for i in range(len(dictionary)):
@@ -520,22 +522,26 @@ def guess_mode(dictionary):
                 print(f"{COLORS['red']}█{COLORS['reset']}", end=" ");
         print("\n");
         
-        if (len(used_words) == len(dictionary)):
+        if (len(used_words) == 0):
             print("Ya se han mostrado todas las palabras");
             break;
         
-        word = random.choice(dictionary);
-        while word in used_words:
-            word = random.choice(dictionary);
-        used_words.append(word);
-
+        word = used_words.pop(random.randrange(len(used_words)));
         print("DEFINICION:  ", word["definition"]);
         print("CONCEPTO:     ");
-        
-        wordSchema = get_schema(word["concept"]);
-        guessedWord = input(wordSchema);
+        word_concept = strip_accents(word['concept']).lower();
 
-        if (guessedWord.lower() == word["concept"].lower()):
+        while True:
+            wordSchema = get_schema(word["concept"]);
+            guessedWord = strip_accents(input(wordSchema).lower());
+            if (len(guessedWord) == len(word_concept)):
+                break;
+            # Go one line up and remove the line
+            sys.stdout.write("\033[F");
+            sys.stdout.write("\033[K");
+            sys.stdout.flush()
+
+        if (guessedWord == word_concept):
             print(f"{COLORS['green']}¡Correcto!{COLORS['reset']}");
             status_vector[status_index] = "correct";
         else:
