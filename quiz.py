@@ -565,8 +565,8 @@ def guess_mode(dictionary):
 def get_schema(word):
     schema = "";
     for letter in word:
-        if letter == " ":
-            schema += " ";
+        if letter in ["/", "-", "_", " ", "(", ")"]:
+            schema += letter;
         else:
             schema += "#";
     schema+= "\r"
