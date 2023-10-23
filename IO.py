@@ -1,3 +1,4 @@
+import os
 import json
 
 def read_json_file(filepath):
@@ -10,9 +11,12 @@ def read_json_file(filepath):
     Returns:
         dict: A dictionary containing the contents of the JSON file.
     """
-    with open(filepath, 'r', encoding='utf-8') as f:
-        data = json.load(f)
-    return data
+    try:
+        with open(filepath, 'r', encoding='utf-8') as f:
+            data = json.load(f)
+        return data
+    except FileNotFoundError:
+        return None
 
 def write_json_file(filepath, data):
     """
@@ -27,3 +31,18 @@ def write_json_file(filepath, data):
     """
     with open(filepath, 'w', encoding='utf-8') as f:
         json.dump(data, f, ensure_ascii=False, indent=4)
+
+def delete_file(filepath):
+    """
+    Deletes a file at the specified filepath.
+
+    Args:
+        filepath (str): The path to the file to delete.
+
+    Returns:
+        None
+    """
+    try:
+        os.remove(filepath)
+    except FileNotFoundError:
+        pass

@@ -1,12 +1,12 @@
 import sys
 import random
-from constants import DICTIONARY
 from utils import clear_terminal, get_exit, strip_accents
 from terminalPrints import print_title, print_colored_text
+from IO import write_json_file
 
-def guess_mode():
-    remaining_words = DICTIONARY.copy()
-    total_dictionary_lenght = len(DICTIONARY);
+def guess_mode(dictionary):
+    remaining_words = dictionary.copy()
+    total_dictionary_lenght = len(dictionary);
     status_vector = []
     wrong_words = []
     for i in range(total_dictionary_lenght):
@@ -53,6 +53,7 @@ def guess_mode():
             break;
 
     show_wrong_words(wrong_words);
+    write_json_file("wrong_words.json", wrong_words);
 
 
 def show_wrong_words (wrong_words):
