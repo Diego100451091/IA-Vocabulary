@@ -15,7 +15,7 @@ DICTIONARY = [
     },
     {
         "concept": "ADAS (Advanced Driver-Assistant System)",
-        "definition": "Conjutno de sistemas electrónicos diseñados para ayudar a conductores en la conducción, generalmente resultando en aumento de la seguridad."
+        "definition": "Conjunto de sistemas electrónicos diseñados para ayudar a conductores en la conducción, generalmente resultando en aumento de la seguridad."
     },
     {
         "concept": "Adecuación",
@@ -51,7 +51,7 @@ DICTIONARY = [
     },
     {
         "concept": "Árbol de decisión",
-        "definition": "Tipo de modelo de aprendizaje supervisado utilizado para clasificación y regresión. Está compuesto por nodos (hojas), que representan los valores/clases y conexiones (ramas), que representan los resultados de las acciones. Un árbol de decisión puede ser una representación visual de las consecuencias de las diferentes acciones. ID3 o M5 son ejemplos de este tipo de modelo."
+        "definition": "Tipo de modelo de aprendizaje supervisado utilizado para clasificación y regresión. Está compuesto por nodos (hojas), que representan los valores/clases y conexiones (ramas), que representan los resultados de las acciones. Este modelo puede ser una representación visual de las consecuencias de las diferentes acciones. ID3 o M5 son ejemplos de este tipo de modelo."
     },
     {
         "concept": "Asociaciones",
@@ -235,7 +235,7 @@ DICTIONARY = [
     },
     {
         "concept": "Modelo",
-        "definition": "Representación matemática que identifica los patrones entre los atributos de los objetos en un conjutno de datos dado"
+        "definition": "Representación matemática que identifica los patrones entre los atributos de los objetos en un conjunto de datos dado"
     },
     {
         "concept": "Mutación",
@@ -295,7 +295,7 @@ DICTIONARY = [
     },
     {
         "concept": "Random Forest",
-        "definition": "Comibación de árboles de decisión donde cada uno depende de los valores de un vector aleatorio. Durante la predicción, el bosque combina las predicciones individuales para producir un resultado más preciso."
+        "definition": "Combinación de árboles de decisión donde cada uno depende de los valores de un vector aleatorio. Durante la predicción, el bosque combina las predicciones individuales para producir un resultado más preciso."
     },
     {
         "concept": "Realidad Mixta",
@@ -378,8 +378,8 @@ DICTIONARY = [
         "definition": "Tecnologías que se llevan puestas como accesorios o ropa y están diseñados para interactuar con el usuario y recopilar información. Estos dispositivos suelen estar equipados con sensores, conectividad inalámbrica y capacidades de procesamiento de datos. Ejemplos: Smart ring, Smart Glasses, Smart Watch o Smart Belt."
     },
     {
-        "concept": "Termino",
-        "definition": "Palabra o conjutno de palabras extraido directamente de un corpus por medios de procesado de lenguaje natural."
+        "concept": "Término",
+        "definition": "Palabra o conjunto de palabras extraido directamente de un corpus por medios de procesado de lenguaje natural."
     },
     {
         "concept": "Test de Turing",
@@ -395,7 +395,7 @@ DICTIONARY = [
     },
     {
         "concept": "Token",
-        "definition": "Bloque de texto categorizado en una sentencia, donde esta categoría está relacionada con la función que dicho token representa."
+        "definition": "Bloque de texto categorizado en una sentencia, donde esta categoría está relacionada con la función que dicho bloque de texto representa."
     },
     {
         "concept": "Tokenizing",
