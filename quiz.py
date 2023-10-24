@@ -37,6 +37,8 @@ def main():
             getpass.getpass("Pulsa ENTER para continuar.")
         elif (option == "5"):
             settings_mode()
+        elif (option == "6"):
+            break;
         else:
             print("Opcion no valida. Intente de nuevo.")
             getpass.getpass("Pulsa ENTER para continuar.");

@@ -30,12 +30,21 @@ def guess_mode(dictionary):
         word = remaining_words.pop(random.randrange(len(remaining_words)))
         print("DEFINICION:  ", word["definition"])
         print("CONCEPTO:     ")
-        word_concept = strip_accents(word['concept']).lower()
-        trimmed_word = trim_spaces(word_concept, settings["spaces"])
+        word_concept = word['concept']
+        word_concept = trim_spaces(word_concept, settings["spaces"] == 1)
+        word_concept = skip_simbols(word_concept, settings["simbols"] == 1)
 
-        guessedWord = get_user_word(trimmed_word);
+        guessedWord = get_user_word(word_concept);
 
-        if (guessedWord == trimmed_word):
+        if settings["accents"] == 0:
+            guessedWord = strip_accents(guessedWord)
+            word_concept = strip_accents(word_concept)
+        
+        if settings["capital"] == 0:
+            guessedWord = guessedWord.lower()
+            word_concept = word_concept.lower()
+
+        if (guessedWord == word_concept):
             print_colored_text("¡Correcto!", "green")
             status_vector[status_index] = "correct"
         else:
@@ -55,7 +64,8 @@ def guess_mode(dictionary):
 def get_user_word(concept):
     while True:
         wordSchema = get_schema(concept)
-        guessedWord = strip_accents(input(wordSchema).lower())
+
+        guessedWord = input(wordSchema)
         if (len(guessedWord) == len(concept)):
             return guessedWord
         # Go one line up and remove the line
@@ -64,13 +74,23 @@ def get_user_word(concept):
         sys.stdout.flush()
 
 def trim_spaces (word, use_spaces):
-    if use_spaces == 1:
+    if use_spaces:
         return word
-    else:
-        newWord = ""
-        for letter in word:
-            if (letter != " "):
-                newWord += letter
+
+    newWord = ""
+    for letter in word:
+        if (letter != " "):
+            newWord += letter
+    return newWord
+
+def skip_simbols (word, use_simbols):
+    if use_simbols:
+        return word
+    
+    newWord = ""
+    for letter in word:
+        if letter not in ["-", "_", "(", ")"]:
+            newWord += letter
     return newWord
 
 def show_wrong_words(wrong_words):
