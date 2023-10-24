@@ -10,6 +10,7 @@ def read_json_file(filepath):
 
     Returns:
         dict: A dictionary containing the contents of the JSON file.
+        None: If the file doesn't exist
     """
     try:
         with open(filepath, 'r', encoding='utf-8') as f:

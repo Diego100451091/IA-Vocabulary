@@ -11,4 +11,15 @@ COLORS = {
     "reset": "\033[0;0m"
 }
 
+BG_COLORS = {
+    "red": "\033[1;41m",
+    "green": "\033[1;42m",
+    "yellow": "\033[1;43m",
+    "blue": "\033[1;44m",
+    "purple": "\033[1;45m",
+    "cyan": "\033[1;46m",
+    "white": "\033[1;47m",
+    "reset": "\033[0;0m"
+}
+
 DICTIONARY = read_json_file("dictionary.json")

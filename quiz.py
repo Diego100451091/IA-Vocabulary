@@ -5,6 +5,7 @@ from utils import clear_terminal
 from definitionMode import definition_mode
 from guessMode import guess_mode
 from IO import read_json_file, delete_file
+from settings import settings_mode
 
 def main():
     while True:
@@ -16,7 +17,8 @@ def main():
         print("2. Adivinanza")
         print("3. Modo errores")
         print("4. Eliminar registro errores")
-        print("5. Salir")
+        print("5. Ajustes")
+        print("6. Salir")
         option = input("\nOpcion: ")
         if (option == "1"):
             definition_mode()
@@ -34,7 +36,7 @@ def main():
             print("Registro de errores eliminado")
             getpass.getpass("Pulsa ENTER para continuar.")
         elif (option == "5"):
-            break
+            settings_mode()
         else:
             print("Opcion no valida. Intente de nuevo.")
             getpass.getpass("Pulsa ENTER para continuar.");
