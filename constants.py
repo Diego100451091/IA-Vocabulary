@@ -22,4 +22,3 @@ BG_COLORS = {
     "reset": "\033[0;0m"
 }
 
-DICTIONARY = read_json_file("dictionary.json")

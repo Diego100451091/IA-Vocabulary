@@ -1,6 +1,7 @@
 import os
 import unicodedata
 
+
 def strip_accents(string):
    """Removes accents and diacritics from a string.
 
@@ -36,6 +37,7 @@ def get_exit():
     """
     text = input("\nPresiona ENTER para continuar o 'exit' para salir del modo\n");
     if text == "exit":
-        return True;
+        return True
     else:
-        return False;
+        return False
+    

@@ -1,11 +1,11 @@
 import getpass
 
-from constants import COLORS, DICTIONARY
+from constants import COLORS
 from utils import clear_terminal
 from definitionMode import definition_mode
 from guessMode import guess_mode
 from IO import read_json_file, delete_file
-from settings import settings_mode
+from settings import settings_mode, get_dictionary
 
 def main():
     while True:
@@ -21,9 +21,9 @@ def main():
         print("6. Salir")
         option = input("\nOpcion: ")
         if (option == "1"):
-            definition_mode()
+            definition_mode(get_dictionary())
         elif (option == "2"):
-            guess_mode(DICTIONARY)
+            guess_mode(get_dictionary())
         elif (option == "3"):
             wrong_dict = read_json_file("wrong_words.json")
             if (wrong_dict != None):
@@ -38,7 +38,7 @@ def main():
         elif (option == "5"):
             settings_mode()
         elif (option == "6"):
-            break;
+            break
         else:
             print("Opcion no valida. Intente de nuevo.")
             getpass.getpass("Pulsa ENTER para continuar.");

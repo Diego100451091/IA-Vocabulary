@@ -1,0 +1,350 @@
+[
+    {
+        "concept": "ACO",
+        "definition": "Algoritmo de IA de enjambre inspirado en el comportamiento de las colonias de hormigas. El algoritmo simula el comportamiento de las hormigas para encontrar soluciones eficientes explorando el espacio de búsqueda de soluciones mediante un modelo de feromonas."
+    },
+    {
+        "concept": "ADAS",
+        "definition": "Conjunto de sistemas electrónicos diseñados para ayudar a conductores en la conducción, generalmente resultando en aumento de la seguridad."
+    },
+    {
+        "concept": "Arquitectura",
+        "definition": "Estructura y diseño de una red neuronal, que consiste en la disposición de capas y conexiones entre nodos, determinando cómo la red procesa la información y realiza tareas de aprendizaje automático."
+    },
+    {
+        "concept": "AutoML",
+        "definition": "Conjunto de interfaces que automatizan diferentes procesos como la selección de atributos, selección de modelos y optimización de hiperparámetros entre otros."
+    },
+    {
+        "concept": "Autoorganización",
+        "definition": "Principio clave en el comportamiento colectivo de la IAE. Este fenómeno se manifiesta cuando los agentes individuales interactúan entre sí, dando lugar a la formación espontánea de estructuras y patrones colectivos sin la necesidad de una planificación centralizada."
+    },
+    {
+        "concept": "Backpropagation",
+        "definition": "Es un método relacionado con las redes neuronales que consiste en calcular y atribuir el error asociado a cada neurona, dependiendo de los resultados obtenidos y los resultados esperados  y de esta forma ajustar y adecuar los parámetros de la red neuronal, para mejorar sus resultados."
+    },
+    {
+        "concept": "BCO (Bee Colony Optimization)",
+        "definition": "Algoritmo de optimización basado en la observación del comportamiento de enjambres de abejas en la naturaleza."
+    },
+    {
+        "concept": "Capa Lineal",
+        "definition": "Una red neuronal que transforma el vector de salida del último decodificador a un vector de tamaño igual al vocabulario del modelo."
+    },
+    {
+        "concept": "Chef robot",
+        "definition": "Aparato de cocina robótico desarrollado por la Universidad de Cambridge que puede aprender a cocinar recetas viendo videos de cocina."
+    },
+    {
+        "concept": "Code Refinement",
+        "definition": "Tipo de modelo de generación de código, basados en LLMs donde se usa toda la estructura del transformer. Consisten en modelos que a partir de un código fuente como entrada, son capaces de detectar y corregir errores, vulnerabilidades o problemas contenidos en el código."
+    },
+    {
+        "concept": "Code Summarization",
+        "definition":"Tipo de modelo de generación de código, basados en LLMs donde se usa solo el encoder del transformer. Consisten en modelos que a partir de un código fuente como entrada, genera salida de texto en lenguaje natural, que pretende resumir y explicar el funcionamiento del texto. Con este mecanismo es posible también generar documentación del código de forma automática."
+    },
+    {
+        "concept": "Coeficientes MFCC",
+        "definition": "Son coeficientes numéricos que representan las características espectrales de una señal de audio. Se obtienen mediante un proceso que incluye la aplicación de filtros de frecuencia Mel, la transformada de Fourier y la aplicación de la Transformada Cepstral Discreta (DCT). Se utilizan comúnmente en el procesamiento de señales de audio y el reconocimiento del habla para capturar información relevante sobre la forma del espectro de la señal."
+    },
+    {
+        "concept": "Common Lisp",
+        "definition": "Lenguaje de programación usado ampliamente en IA hasta fines de los 80, principalmente por la facilidad que ofrece para programación simbólica."
+    },
+    {
+        "concept": "Componente cognitivo",
+        "definition": "Factor causante de que una partícula del Particle Swarm Optimization tienda a moverse con un determinado factor en aquellas direcciones donde ha obtenido sus mejores resultados."
+    },
+    {
+        "concept": "Componente social",
+        "definition": "Factor causante de que una partícula del Particle swarm optimization tienda a moverse con un determinado factor en aquella dirección donde el conjunto del enjambre ha encontrado la mejor solución."
+    },
+    {
+        "concept": "Comunicación local",
+        "definition": "Interacción directa entre los individuos del enjambre que están en proximidad física o que tienen influencia directa en el entorno inmediato de cada uno."
+    },
+    {
+        "concept": "Conocimiento tácito",
+        "definition": "Es el conocimiento que involucra sentimientos, emociones, experiencias y otros elementos que no se adquieren de forma explícita a través de la información, pero que influyen de forma significativa en la comprensión y toma de decisiones humanas."
+    },
+    {
+        "concept": "Data Augmentation",
+        "definition": "Proceso que consiste en la generación de nuevos datos a partir de datos existentes, que sirve tanto como para la recolecta de datos, como para evitar over-fitting."
+    },
+    {
+        "concept": "DeepGestalt",
+        "definition": "Es un algoritmo de inteligencia artificial diseñado para el análisis y diagnóstico de enfermedades genéticas y trastornos médicos a través del reconocimiento facial. Se basa en algoritmos de visión por computadora y deep learning para cuantificar similitudes con cientos de síndromes genéticos"
+    },
+    {
+        "concept": "Diagnóstico precoz",
+        "definition": "Se refiere a la detección y tratamiento de la enfermedad en un estado muy temprano, cuando aún no provoca síntomas."
+    },
+    {
+        "concept": "Dron",
+        "definition": "Vehículo aéreo no tripulado, utilizado en el ámbito militar (para reconocimiento táctico desde gran altura, vigilancia del campo de batalla o guerra electrónica) y civil (vigilancia de manifestaciones, control de la contaminación y de incendios forestales, etc.)."
+    },
+    {
+        "concept": "Efector",
+        "definition": "Mecanismo que permite al robot interactuar con el entorno mediante el uso de actuadores. Transforma las órdenes recibidas por los controladores en el efecto deseado, siendo equivalente a las extremidades del cuerpo humano."
+    },
+    {
+        "concept": "Embedding",
+        "definition": "Proceso de convertir palabras en vectores numéricos para que la red neuronal pueda comprenderlas"
+    },
+    {
+        "concept": "Embodiment o Encarnación",
+        "definition": "Se refiere a la idea de dotar a un sistema o entidad artificial con una forma física o una representación tangible en el mundo real. En otras palabras, implica la incorporación de la IA en un cuerpo físico (robot) o en un entorno que le permita interactuar con el mundo de una manera más similar a cómo lo hacen los seres humanos."
+    },
+    {
+        "concept": "Enmascaramiento",
+        "definition": "Una técnica utilizada en el bloque atencional durante la decodificación para ocultar información futura y permitir que la red se enfoque solo en la información disponible hasta ese punto en la secuencia."
+    },
+    {
+        "concept": "Entropía",
+        "definition": "Métrica que mide el grado de incertidumbre o aleatoriedad en un conjunto de datos. Si todos los datos de un subconjunto pertenecen a la misma clase, entonces no hay incertidumbre o aleatoriedad en ese conjunto de datos, y por lo tanto el valor de esta métrica es cero."
+    },
+    {
+        "concept": "Espectograma",
+        "definition": "Es una representación visual de la intensidad de las frecuencias de sonido con respecto al tiempo. Es una herramienta útil para analizar la composición espectral de señales de audio y puede ser utilizado como entrada a redes convolucionales para sus análisis y segmentación."
+    },
+    {
+        "concept": "Etología",
+        "definition": "Rama de la biología y de la psicología experimental que estudia el comportamiento de los animales en sus medios naturales"
+    },
+    {
+        "concept": "Face2Gene",
+        "definition": "Plataforma de inteligencia artificial y herramienta de apoyo médico diseñada para ayudar a los profesionales de la salud, especialmente genetistas y médicos que trabajan con trastornos genéticos, a identificar y evaluar enfermedades genéticas basadas en características faciales y síntomas clínicos."
+    },
+    {
+        "concept": "FCAS",
+        "definition": "Proyecto europeo de desarrollo de caza de sexta generación, que usa drones y está conectado a una red de información militar."
+    },
+    {
+        "concept": "Feromonas",
+        "definition": "Sustancia química que liberan los insectos que afecta al comportamiento de otros individuos de la misma especie. En IA de enjambre, se emplea como modelo probabilístico parametrizado que se utiliza para guiar la búsqueda hacia soluciones de mayor calidad en problemas de optimización combinatoria. "
+    },
+    {
+        "concept": "Finetuning",
+        "definition": "Etapa de entrenamiento de un LLM, donde, a partir de un modelo entrenado con grandes cantidades de textos de temática general, se le especializa entrenandolo con datos especificos del contexto donde se quiere aplicar. Por ejemplo con las IAs generadoras de código, se entrena un LLM preentrenado, con grandes cantidades de código fuente."
+    },
+    {
+        "concept": "Genómica",
+        "definition": "El estudio integral de la información genética contenida en el ADN de un organismo, incluyendo la secuencia de genes, su estructura, función y la interacción entre ellos."
+    },
+    {
+        "concept": "Google Cloud ML",
+        "definition": "Servicio en la nube de Google que simplifica el desarrollo, entrenamiento y despliegue de modelos de aprendizaje automático."
+    },
+    {
+        "concept": "Grid Search",
+        "definition": "Método de optimización de hiperparámetros que divide el espacio de búsqueda en intervalos regulares, evalúa cada espacio y selecciona el mejor que haya evaluado."
+    },
+    {
+        "concept": "Heurística",
+        "definition": "Conocimiento informal y juicioso de un área de aplicación que constituye las reglas del buen juicio en ese campo. También abarca el conocimiento de cómo resolver problemas de manera eficiente y eficaz, cómo planificar pasos para resolver un problema complejo, cómo mejorar el rendimiento, etc."
+    },
+    {
+        "concept": "Historias Clínicas Electrónicas (HCE)",
+        "definition": "Registros digitales de los datos sociales, preventivos y médicos de un paciente, facilitando el acceso y la gestión de información clínica."
+    },
+    {
+        "concept": "HMM",
+        "definition": "Modelo estadístico en el que se asume que el sistema a modelar es un proceso de Márkov de parámetros desconocidos. El objetivo es determinar los parámetros desconocidos de dicha cadena a partir de los parámetros observables. Se pueden considerar como la red bayesiana dinámica más simple."
+    },
+    {
+        "concept": "Ingeniería de características",
+        "definition": "Proceso cuyo objetivo es maximizar la extracción de características sobre los datos brutos."
+    },
+    {
+        "concept": "Interpretabilidad",
+        "definition": "Se refiere a la capacidad de entender y explicar de manera clara y comprensible cómo funciona un modelo o algoritmo de inteligencia artificial en términos de la toma de decisiones específicas."
+    },
+    {
+        "concept": "Lenguaje de las abejas",
+        "definition": "Sistema de comunicación empleado por las abejas, principalmente a través de la danza de la abeja exploradora. Consiste en movimientos específicos, acompañados de sonidos, que transmiten información a las abejas obreras, sobre la ubicación de las fuentes de alimento halladas, para que vayan en busca de la zona en cuestión."
+    },
+    {
+        "concept": "LLM",
+        "definition": "Una red neuronal con billones de parámetros entrenados en grandes cantidades de texto sin etiquetar usando aprendizaje autosupervisado (datos sin etiquetas) o semisupervisado. Son capaces de llevar a cabo gran variedad de tareas como analisis de sentimientos o razonamiento matemático."
+    },
+    {
+        "concept": "LSTM",
+        "definition": "Un tipo de red neuronal recurrente (RNN) que se utiliza en inteligencia artificial para modelar secuencias de datos y retener información a largo plazo, lo que lo hace especialmente útil en tareas de procesamiento de lenguaje natural y predicción de series temporales."
+    },
+    {
+        "concept": "Magenta Studio",
+        "definition": "Colección de herramientas en relación a la creatividad musical de código abierto, utilizando modelos de aprendizaje autómatico refinados para la generación de música."
+    },
+    {
+        "concept": "Manipulador",
+        "definition": "Tipo de robot anclado en su lugar de trabajo, utilizado para tareas industriales mediante el desplazamiento de sus articulaciones."
+    },
+    {
+        "concept": "MuseNet",
+        "definition": "Es una herramienta creada por OpenAI la cual consiste en una red neuronal profunda que puede generar composiciones musicales de una duración de 4 minutos con 10 instrumentos diferentes. Tambien puede usarse como herramienta para combinar estilos musicales, artistas, bases, canciones, etc."
+    },
+    {
+        "concept": "Nano robots",
+        "definition": "Pequeños robots controlados con IA que pueden dirigirse específicamente a las regiones afectadas de ciertas enfermedades neurológicas para aplicar tratamientos menos invasivos que los actuales."
+    },
+    {
+        "concept": "Ontología",
+        "definition": "Representación formal y estructurada de los conceptos y sus relaciones en un dominio específico, utilizada para facilitar la comprensión y el razonamiento de las máquinas sobre ese dominio."  
+    },
+    {
+        "concept": "Optimización basada en gradiente",
+        "definition": "Método de optimización de hiperparámetros que utiliza la información del gradiente de estos para mejorar la eficiencia de la búsqueda de hiperparámetros."
+    },
+    {
+        "concept": "Optimización Bayesiana",
+        "definition": "Método de optimización perteneciente a las funciones de caja negra que construye un modelo probabilístico para relacionar los hiperparámetros con las métricas evaluadas en la validación."
+    },
+    {
+        "concept": "Optimización de hiperparámetros",
+        "definition": "Proceso que trata de obtener la combinación de hiperparámetros que consiga el mayor rendimiento del modelo a utilizar."
+    },
+    {
+        "concept": "Paradigma Jerárquico",
+        "definition": "Paradigma de control utilizado en robótica, el cual está basado en una visión introspectiva de cómo las personas piensan, es decir, de manera secuencial y ordenada."
+    },
+    {
+        "concept": "Paradigmas de control",
+        "definition": "Filosofías y/o técnicas que caracterizan el enfoque para resolver problemas. Y en concreto, caracterizan la forma de organizar la inteligencia en un robot."
+    },
+    {
+        "concept": "Plug and play",
+        "definition": "Capacidad de implementar modelos automáticamente, sin requerir configuraciones complejas, facilitando el proceso de aprendizaje automático."
+    },
+    {
+        "concept": "Positional Encoding",
+        "definition": "Algoritmo utilizado para agregar información de posición a los vectores de embedding, permitiendo a la red neural entender la ubicación de las palabras en la secuencia."
+    },
+    {
+        "concept": "PSO",
+        "definition": "Algoritmo de IA de enjambre que se inspira en el comportamiento de los bancos de peces o las bandadas de pájaros. En problemas de búsqueda de mínimos o máximos globales, se usan partículas que se desplazarán sobre un espacio de búsqueda teniendo en cuenta la mejor solución que otras partículas han encontrado y la mejor solución propia, entre otros parámetros."
+    },
+    {
+        "concept": "Random Search",
+        "definition": "Método de optimización de hiperpárametros que selecciona el mejor punto evaluado de un conjunto aleatorio de puntos."
+    },
+    {
+        "concept": "Razonamiento Basado en Casos",
+        "definition": "Técnica de inteligencia artificial que se utiliza para resolver problemas complejos mediante la aplicación de soluciones previas a problemas similares."
+    },
+    {
+        "concept": "RodoBees",
+        "definition": "Enjambre de pequeños robots que usan algoritmos de abeja, cuyo objetivo es realizar operaciones de búsqueda y rescate, vigilancia o polinización artificial, desarrollado por la Universidad de Harvard."
+    },
+    {
+        "concept": "Sepsis",
+        "definition": "Es una respuesta extrema del cuerpo a una infección, sin un tratamiento rápido, puede provocar daños en los tejidos, falla orgánica e incluso la muerte."
+    },
+    {
+        "concept": "Sistema quirúrgico Da Vinci",
+        "definition": "es un sistema quirúrgico robótico autónomo que permite a los cirujanos a realizar operaciones precisas y mínimamente invasivas."
+    },
+    {
+        "concept": "Sistemas de ayuda a la decisión diagnóstica (DDSS)",
+        "definition": "Son algoritmos informáticos que asisten al clínico en uno o varios pasos del proceso de diagnóstico de enfermedades."
+    },
+    {
+        "concept": "Sparse Transformer",
+        "definition": "es una red neuronal profunda que utiliza una atención multi-cabeza para procesar las secuencias de texto, audio o imagen prediciendo el siguiente token de la secuencia. Además usan una técnica de compresión para reducir la cantidad de información que debe ser procesada."
+    },
+    {
+        "concept": "Spleeter",
+        "definition": "Aplicación realizada por Deezer capaz de separar una canción en hasta 5 canales diferentes, cada uno compuesto por uno de los instrumentos de la canción (voz, piano, bajo, batería, etc...) mediante el uso de una Red Totalmente Convolucional en forma de U-net."
+    },
+    {
+        "concept": "Streaming",
+        "definition": "Servicios de distribución digital de contenido multimedia, como series, películas, podcast o música."
+    },
+    {
+        "concept": "Tomografías por emisión de positrones (PET)",
+        "definition": "Una técnica de imagen médica que utiliza sustancias radioactivas para crear imágenes tridimensionales del funcionamiento y metabolismo de los tejidos en el cuerpo. De esta forma, a través de rayos X se pueden crear imágenes detalladas de regiones internas del cuerpo."
+    },
+    {
+        "concept": "Transformada Rápida de Fourier (FFT)",
+        "definition": "Es un algoritmo para calcular eficientemente la descomposición de una señal de audio en sus componentes de frecuencia, permitiendo un análisis detallado de las características espectrales de la señal en el dominio de la frecuencia."
+    },
+    {
+        "concept": "Transformer",
+        "definition": "Una arquitectura de red neuronal que utiliza mecanismos de atención para procesar información de manera paralela, introducida en el artículo \"Attention Is All You Need\" de Google en 2017."
+    },
+    {
+        "concept": "U-net",
+        "definition": "Arquitectura de Red Convolucional en la que tanto el encoder como el decoder tienen el mismo número de capas, haciendo que la red tenga una forma de U. Se utiliza en tareas de segmentación y análisis de imágenes."
+    },
+    {
+        "concept": "VRP (Vehicle Routing Problem)",
+        "definition": "Problema que persigue asignar un conjunto de rutas a uno o varios vehículos que salen de un almacén para que cubran las demandas de los distintos clientes mientras se cumplen una serie de restricciones. Este problema puede ser resuelto por medio de algoritmos de inteligencia artificial de enjambres como el PSO."
+    },
+    {
+        "concept": "WABOT2",
+        "definition": "Robot humanoide fabricado en 1980 con capacidades de comunicación, lectura de partituras musicales y adaptación al tempo del cantante."
+    },
+    {
+        "concept": "Zero-Crossing",
+        "definition": "Punto en el cual una forma de onda cambia de polaridad, es decir, cuando atraviesa el nivel cero en el eje temporal. En una señal de audio, esto ocurre cuando la amplitud de la onda cambia de positiva a negativa o viceversa."
+    },
+    {
+        "concept": "Zero-Shot",
+        "definition": "se refiere a la capacidad de un modelo para realizar tareas para las cuales no ha sido explícitamente entrenado. En otras palabras, un modelo de zero-shot learning es capaz de aplicar conocimientos adquiridos durante el entrenamiento a situaciones o tareas nuevas que no estaban presentes en los datos de entrenamiento. Un ejemplo de esto, es un robot que ha sido entrenado mediante simulaciones, y que al traerlo posteriormente al mundo real, es capaz de funcionar correctamente sin calibraciones ni reentrenamientos."
+    },
+    {
+        "concept": "Autoencoder",
+        "definition": "Tipo de red neuronal que, dados unos datos de entrada, es capaz de codificarlos (comprimirlos) en una representación más eficiente llamada \"espacio latente\". También es capaz de reconstruir los datos originales (descomprimirlos)."
+    },
+    {
+        "concept": "Humanoide",
+        "definition": "Robots o agentes artificiales que están diseñados para tener características y apariencia similares a las de un ser humano."
+    },
+    {
+        "concept": "Mamdani",
+        "definition": "Forma específica de lógica difusa, desarrollada por Lotfi Zadeh en la década de 1970. La lógica difusa es una extensión de la lógica clásica que permite manejar la incertidumbre y la imprecisión."
+    },
+    {
+        "concept": "ReLU",
+        "definition": "Unidad Lineal Rectificada, es una función de activación ampliamente utilizada en redes neuronales y modelos de aprendizaje profundo."
+    },
+    {
+        "concept": "Singleton",
+        "definition": "Conjunto difuso que contiene un único elemento."
+    },
+    {
+        "concept": "Sugeno",
+        "definition": "Tipo específico de sistema de lógica difusa, las reglas pueden tener conclusiones que son funciones lineales en lugar de conjuntos difusos. Este enfoque se utiliza en sistemas de control difuso para modelar relaciones más precisas entre las variables de entrada y salida."
+    },
+    {
+        "concept": "Vaguedad",
+        "definition": "Falta de precisión o definición clara en un concepto o una afirmación. En lógica difusa, se utiliza para modelar situaciones en las que los límites entre categorías no son nítidos y existen grados de pertenencia."
+    },
+    {
+        "concept": "Defuzzificación",
+        "definition": "Es el proceso de obtener un valor cuantificable en lógica difusa, dados conjuntos difusos y sus correspondientes grados de membresía. Es el proceso que transforma un conjunto difuso a un conjunto clásico."
+    },
+    {
+        "concept": "Fuzzificación",
+        "definition": "Proceso que consiste en convertir una variable realen un grado de pertenencia que cuantifica el grado de posesiónhacia su correspondiente variable lingüística."
+    },
+    {
+        "concept": "Espacio latente",
+        "definition": "Es el espacio en el que se encuentran los datos en la capa de cuello de botella."
+    },
+    {
+        "concept": "Especificidad",
+        "definition": "Métrica utilizada en el campo de la clasificación, especialmente en problemas binarios como la detección de enfermedades o la evaluación del rendimiento de un modelo en un conjunto de datos. Se calcula considerando el número de instancias negativas correctamente clasificadas con respecto al número total de instancias negativas."
+    },
+    {
+        "concept": "Sensibilidad",
+        "definition": "Se refiere a cómo cambia la salida de un modelo con respecto a cambios en sus parámetros o entradas. Es una medida crucial para comprender cómo los cambios en los inputs o parámetros afectan el rendimiento o la salida de un modelo."
+    },
+    {
+        "concept": "Tensor",
+        "definition": "Técnica utilizada para representar y manipular datos en forma de arreglos multidimensionales."
+    },
+    {
+        "concept": "V2I",
+        "definition": "El vehículo se comunica con la infraestructura de la carretera (señales, semáforos, etc). Permite cumplir el reglamente de circulación y evitar colisiones."
+    }
+]
