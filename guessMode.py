@@ -15,7 +15,7 @@ def guess_mode(dictionary):
     status_vector = []
     total_dictionary_lenght = len(dictionary)
     for i in range(total_dictionary_lenght):
-        status_vector.append("clear")
+        status_vector.append(0)
     status_index = 0
 
     while True:
@@ -47,11 +47,11 @@ def guess_mode(dictionary):
 
         if (guessedWord == word_concept):
             print_colored_text("¡Correcto!", "green")
-            status_vector[status_index] = "correct"
+            status_vector[status_index] = 1
         else:
             print_colored_text("Incorrecto", "red", "")
             print(" - La palabra era: ", word["concept"])
-            status_vector[status_index] = "incorrect"
+            status_vector[status_index] = -1
             wrong_words.append(word)
 
         status_index += 1

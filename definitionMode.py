@@ -8,7 +8,7 @@ def definition_mode(dictionary):
     status_vector = []
     total_dictionary_lenght = len(dictionary)
     for i in range(total_dictionary_lenght):
-        status_vector.append("clear")
+        status_vector.append(0)
     status_index = 0
 
     while True:
@@ -26,7 +26,7 @@ def definition_mode(dictionary):
         print("CONCEPTO:    ", word["concept"])
         print("DEFINICION:  ", word["definition"])
 
-        status_vector[status_index] = "correct"
+        status_vector[status_index] = 1
         status_index += 1
         
         if get_exit():
