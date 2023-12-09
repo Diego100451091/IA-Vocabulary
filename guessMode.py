@@ -1,7 +1,7 @@
 import sys
 import random
 from utils import clear_terminal, get_exit, strip_accents
-from terminalPrints import print_title, print_colored_text
+from terminalPrints import print_title, print_colored_text, print_progress
 from IO import write_json_file
 from settings import get_settings
 
@@ -10,9 +10,10 @@ def guess_mode(dictionary):
     settings = get_settings()
 
     remaining_words = dictionary.copy()
-    total_dictionary_lenght = len(dictionary)
-    status_vector = []
     wrong_words = []
+    
+    status_vector = []
+    total_dictionary_lenght = len(dictionary)
     for i in range(total_dictionary_lenght):
         status_vector.append("clear")
     status_index = 0
@@ -21,7 +22,7 @@ def guess_mode(dictionary):
         clear_terminal()
         print_title("MODO ADIVINANZA")
 
-        print_progress(status_vector, status_index, total_dictionary_lenght)
+        print_progress(status_vector)
 
         if (len(remaining_words) == 0):
             print("Ya se han mostrado todas las palabras")
@@ -34,7 +35,7 @@ def guess_mode(dictionary):
         word_concept = trim_spaces(word_concept, settings["spaces"] == 1)
         word_concept = skip_simbols(word_concept, settings["simbols"] == 1)
 
-        guessedWord = get_user_word(word_concept);
+        guessedWord = get_user_word(word_concept)
 
         if settings["accents"] == 0:
             guessedWord = strip_accents(guessedWord)
@@ -100,19 +101,6 @@ def show_wrong_words(wrong_words):
         print("DEFINICIÓN: ", word["definition"])
 
     get_exit()
-
-
-def print_progress(status_vector, status_index, total_lenght):
-    print("Progreso: ", end="")
-    for status in status_vector:
-        if status == "clear":
-            print("■", end="")
-        elif status == "correct":
-            print_colored_text("■", "green", end="")
-        elif status == "incorrect":
-            print_colored_text("■", "red", end="")
-    print(f" {status_index}/{total_lenght}\n")
-
 
 def get_schema(word):
     schema = ""
