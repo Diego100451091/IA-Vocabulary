@@ -16,7 +16,6 @@ def definition_mode(dictionary):
         print_title("MODO DEFINICIÓN")
 
         print_progress(status_vector)
-
         
         if (len(remaining_words) == 0):
             print("Ya se han mostrado todas las palabras")

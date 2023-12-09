@@ -224,6 +224,10 @@
         "definition": "Representación formal y estructurada de los conceptos y sus relaciones en un dominio específico, utilizada para facilitar la comprensión y el razonamiento de las máquinas sobre ese dominio."  
     },
     {
+        "concept": "Opacidad",
+        "definition": "Falta de transparencia o comprensión clara sobre cómo funcionan los algoritmos y procesos de la IA en la toma de decisiones."
+    },
+    {
         "concept": "Optimización",
         "definition": "Mejora o perfeccionamiento de un sistema o proceso con el objetivo de maximizar eficiencia, rendimiento o resultados deseados."
     },
