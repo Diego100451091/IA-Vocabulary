@@ -140,6 +140,10 @@
         "definition": "Servicio en la nube de Google que simplifica el desarrollo, entrenamiento y despliegue de modelos de aprendizaje automático."
     },
     {
+        "concept": "Grado de verdad",
+        "definition": "En lógica difusa, es un valor entre 0 y 1 que representa el grado de pertenencia de un elemento a un conjunto difuso."
+    },
+    {
         "concept": "Grid Search",
         "definition": "Método de optimización de hiperparámetros que divide el espacio de búsqueda en intervalos regulares, evalúa cada espacio y selecciona el mejor que haya evaluado."
     },
@@ -194,6 +198,10 @@
     {
         "concept": "Ontología",
         "definition": "Representación formal y estructurada de los conceptos y sus relaciones en un dominio específico, utilizada para facilitar la comprensión y el razonamiento de las máquinas sobre ese dominio."  
+    },
+    {
+        "concept": "Opacidad",
+        "definition": "Falta de transparencia o comprensión clara sobre cómo funcionan los algoritmos y procesos de la IA en la toma de decisiones." 
     },
     {
         "concept": "Optimización basada en gradiente",
@@ -293,7 +301,7 @@
     },
     {
         "concept": "Zero-Shot",
-        "definition": "se refiere a la capacidad de un modelo para realizar tareas para las cuales no ha sido explícitamente entrenado. En otras palabras, un modelo de zero-shot learning es capaz de aplicar conocimientos adquiridos durante el entrenamiento a situaciones o tareas nuevas que no estaban presentes en los datos de entrenamiento. Un ejemplo de esto, es un robot que ha sido entrenado mediante simulaciones, y que al traerlo posteriormente al mundo real, es capaz de funcionar correctamente sin calibraciones ni reentrenamientos."
+        "definition": "Se refiere a la capacidad de un modelo para realizar tareas para las cuales no ha sido explícitamente entrenado. En otras palabras, un modelo de este tipo es capaz de aplicar conocimientos adquiridos durante el entrenamiento a situaciones o tareas nuevas que no estaban presentes en los datos de entrenamiento. Un ejemplo de esto, es un robot que ha sido entrenado mediante simulaciones, y que al traerlo posteriormente al mundo real, es capaz de funcionar correctamente sin calibraciones ni reentrenamientos."
     },
     {
         "concept": "Autoencoder",
