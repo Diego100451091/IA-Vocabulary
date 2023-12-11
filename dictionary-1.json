@@ -104,7 +104,7 @@
         "definition": "Métrica que mide el grado de incertidumbre o aleatoriedad en un conjunto de datos. Si todos los datos de un subconjunto pertenecen a la misma clase, entonces no hay incertidumbre o aleatoriedad en ese conjunto de datos, y por lo tanto el valor de esta métrica es cero."
     },
     {
-        "concept": "Espectrograma",
+        "concept": "Espectograma",
         "definition": "Es una representación visual de la intensidad de las frecuencias de sonido con respecto al tiempo. Es una herramienta útil para analizar la composición espectral de señales de audio y puede ser utilizado como entrada a redes convolucionales para sus análisis y segmentación."
     },
     {
@@ -114,10 +114,6 @@
     {
         "concept": "Face2Gene",
         "definition": "Plataforma de inteligencia artificial y herramienta de apoyo médico diseñada para ayudar a los profesionales de la salud, especialmente genetistas y médicos que trabajan con trastornos genéticos, a identificar y evaluar enfermedades genéticas basadas en características faciales y síntomas clínicos."
-    },
-    {
-        "concept": "Fake News",
-        "definition": "Noticias falsas o engañosas, generalmente creadas para influir en las opiniones o esconder la verdad, a menudo con fines políticos o económicos."
     },
     {
         "concept": "FCAS",
@@ -350,5 +346,17 @@
     {
         "concept": "V2I",
         "definition": "El vehículo se comunica con la infraestructura de la carretera (señales, semáforos, etc). Permite cumplir el reglamente de circulación y evitar colisiones."
+    },
+    {
+        "concept": "Fake news",
+        "definition": "Se conoce como el tipo de bulo que consiste en un contenido seudoperiodístico difundido a través de portales de noticias, prensa escrita, radio, televisión y redes sociales y que tiene como objetivo desinformar a un público en específico."
+    },
+    {
+        "concept": "Grado de Verdad",
+        "definition": "Se refiere a la medida de certeza o veracidad de una proposición que puede tomar un valor en un rango continuo entre 0 y 1, en contraste con la lógica clásica, que se basa en la verdad o falsedad absolutas."
+    },
+    {
+        "concept": "Opacidad",
+        "definition": "Se refiere a la falta de transparencia o comprensibilidad en los modelos y sistemas. Los sistemas de lógica difusa, especialmente en el ámbito de la inteligencia artificial, a menudo se consideran opacos porque pueden ser difíciles de entender para los humanos debido a su naturaleza compleja y a la cantidad de reglas y parámetros involucrados."
     }
 ]
