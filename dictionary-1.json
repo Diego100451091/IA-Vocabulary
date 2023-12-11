@@ -104,7 +104,7 @@
         "definition": "Métrica que mide el grado de incertidumbre o aleatoriedad en un conjunto de datos. Si todos los datos de un subconjunto pertenecen a la misma clase, entonces no hay incertidumbre o aleatoriedad en ese conjunto de datos, y por lo tanto el valor de esta métrica es cero."
     },
     {
-        "concept": "Espectograma",
+        "concept": "Espectrograma",
         "definition": "Es una representación visual de la intensidad de las frecuencias de sonido con respecto al tiempo. Es una herramienta útil para analizar la composición espectral de señales de audio y puede ser utilizado como entrada a redes convolucionales para sus análisis y segmentación."
     },
     {
