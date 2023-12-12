@@ -313,7 +313,7 @@
     },
     {
         "concept": "Mamdani",
-        "definition": "Forma específica de lógica difusa, desarrollada por Lotfi Zadeh en la década de 1970. La lógica difusa es una extensión de la lógica clásica que permite manejar la incertidumbre y la imprecisión."
+        "definition": "Método de lógica difusa, desarrollada por Lotfi Zadeh en la década de 1970. Es un método utilizado en sistemas de lógica difusa, especialmente en el contexto de control difuso, donde se utiliza para inferir la salida a partir de un conjunto de reglas difusas."
     },
     {
         "concept": "ReLU",
